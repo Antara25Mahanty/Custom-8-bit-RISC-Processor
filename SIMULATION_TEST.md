@@ -40,11 +40,11 @@ The instructions are converted into their corresponding 13-bit binary representa
 
 | PC | Instruction | Binary Encoding |
 |---:|---|---|
-| 0 | ADD R1, R2, R3 | To be populated |
-| 1 | SUB R5, R4, R3 | To be populated |
-| 2 | AND R6, R1, R2 | To be populated |
-| 3 | OR R7, R2, R3 | To be populated |
-| 4 | XOR R0, R1, R3 | To be populated |
+| 0 | ADD R1, R2, R3 | 000 001 010 011 0 |
+| 1 | SUB R5, R4, R3 | 001 101 100 011 0 |
+| 2 | AND R6, R1, R2 | 010 110 001 010 0 |
+| 3 | OR R7, R2, R3 | 011 111 010 011 0 |
+| 4 | XOR R0, R1, R3 | 100 000 001 011 0 |
 
 ## Simulation Setup
 
@@ -107,7 +107,7 @@ Instruction Fetch → Instruction Decode → Register Read → ALU Execution →
 
 The waveform screenshot below will show the processor executing the test program and the corresponding changes in the datapath and register values.
 
-![Program Simulation Waveform](waveform.png)
+![Program Simulation Waveform](TESTBENCHES/verified_waveform.png)
 
 ## Verification Result
 
